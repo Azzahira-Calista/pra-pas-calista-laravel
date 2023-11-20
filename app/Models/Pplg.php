@@ -5,9 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class Pplg extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['jumlah_murid', 'tahun_angkatan', 'kelas', 'wali_kelas', 'ketua_kelas'];
 }

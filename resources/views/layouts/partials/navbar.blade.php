@@ -10,6 +10,8 @@
           <a class="nav-link" href="/about">About</a> --}}
           <a class="nav-link" href="/students/all">Students</a>
           <a class="nav-link" href="/Ekstra/ekstra">Ekstra</a>
+          <a class="nav-link" href="/Pplg/pplg">Pplg's</a>
+
         </div>
       </div>
     </div>
