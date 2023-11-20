@@ -15,8 +15,9 @@ class EkstraController extends Controller
         ]);
     }
 
-    public function show($ekstra){
-        return view('Ekstra.ekstraDetail',[
+    public function show($ekstra)
+    {
+        return view('Ekstra.ekstraDetail', [
             "title" => "detail_ekstra",
             "ekstra" => Ekstra::find($ekstra)
         ]);

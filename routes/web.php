@@ -32,10 +32,23 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/students/all', [StudentsController::class, 'indew']);
+/// student pages
+Route::get('/students/all', [StudentsController::class, 'index']);
 
 Route::get('/students/detail/{student}', [StudentsController::class, 'show']);
 
+Route::get('/students/create', [StudentsController::class, 'create']);
+
+Route::post('/students/store', [StudentsController::class, 'store']); //buat post request
+
+Route::delete('/students/delete/{student}', [StudentsController::class, 'destroy']);
+
+Route::get('/students/{student}/edit', [StudentsController::class, 'edit']);
+
+Route::put('/students/{student}', [StudentsController::class, 'update']);
+
+/// ekstra pagess
 Route::get('/Ekstra/ekstra', [EkstraController::class, 'index']);
 
 Route::get('/Ekstra/ekstraDetail/{ekstra}', [EkstraController::class, 'show']);
+
